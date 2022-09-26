@@ -1,0 +1,17 @@
+tsc --init` and `tsc --build` commands. The `tsc --init` command creates a `tsconfig.json` file and populates it with the default configuration options. The `tsc --build` command builds one or more projects, and their dependencies if out of date, based on the supplied command line arguments and `tsconfig.json` files. For more information, see [TypeScript's Project References](https://www.typescriptlang.org/docs/handbook/project-references.html).
+tsc compiles all files in the current directory and subdirectories
+tsc -w watches for changes and compiles
+
+tsc blabla.ts compiles the targeted file
+
+
+
+
+
+
+
+
+
+
+Rootdir 
+Outdir change where files go
