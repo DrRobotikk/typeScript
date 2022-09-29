@@ -14,7 +14,7 @@ function NewMeetupPage() {
         },
       }
     ).then(() => {
-      navigate("/");
+      navigate("/", { replace: true });
     });
   }
   return (
