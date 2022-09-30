@@ -41,5 +41,5 @@
   .actions button:hover,
   .actions button:active {
     background-color: blueviolet;
-    border-color: blueviolet;
+    border-color: blueviolet ;
   }
