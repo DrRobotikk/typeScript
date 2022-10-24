@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title> Average Test Scores</title>
+		<script>
+		
+			var entry;
+			var average;
+			var total = 0;
+			var list = [];
+
+			
+			//get three scores from the user and add them together
+			for (var i = 0; i < 3; i++) {
+				entry = prompt("Enter score " + (i + 1));
+	
+				list.push(parseInt(entry));
+				total += parseInt(entry);
+			}
+
+			average=parseInt(total/list.length);
+
+			
+		</script>
+	</head>
+	
+	<body>
+		<script>
+		
+			document.write("<h1> The Test Scores Application</h1>");
+
+			for (var i = 0; i < list.length; i++) {
+				document.write("Score " + (i + 1) + " = " + list[i] + "<br>");
+			}
+			
+	/* 		document.write("Score 1 = " + list[0] + "<br>" + 
+			"Score 2 = " + list[1] + "<br>" + "Score 3 = " + list[2] + "<br><br>" + 
+			"Average score = " + average + "<br><br>"); */
+						
+		</script>
+		<h2>Thanks for using the Test Scores Application !!</h2>
+	</body>
+</html>

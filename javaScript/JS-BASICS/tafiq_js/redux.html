@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title> Average Test Scores</title>
+		<script>
+		
+			var entry;
+			var average;
+            var totalCraditPoints=0;
+            var gba=0;
+            var cgpa=0;
+            var numberOfGradePoints = 0
+			var subjects = 0;
+            var list = [];
+            const creditPoints = 3;
+            const gradePoints = {
+                "A": 4,
+                "B": 3,
+                "C": 2,
+                "D": 1,
+                "E": 0,
+                "F": 0
+            };
+			
+			//get three scores from the user and add them together
+            function gradeEntry(){
+                entry = prompt("Enter all the scores with space" );
+                scores = entry.split(" ");
+
+
+                for (var i = 0; i < scores.length; i++) {
+                    list.push(scores[i]);
+                }
+                
+                for (var j=0; j < list.length; j++) {
+                    list[j] = gradePoints[list[j]];
+                    numberOfGradePoints += parseInt(list[j]);
+                    subjects ++;
+                }
+
+                totalCreditPoints = creditPoints * numberOfGradePoints;
+                gba = totalCreditPoints / (creditPoints* subjects);
+
+                cgpa = gba / 2;
+
+            }
+
+
+	
+			
+
+			
+		</script>
+	</head>
+	
+	<body>
+		<script>
+		
+            gradeEntry();
+
+            document.write("<h1> The Test Scores Application</h1>");
+            document.write("The scores are: " + list + "<br>");
+            document.write("The GBA is: " + gba + "<br>");
+            document.write("The CGPA is: " + cgpa + "<br>");
+						
+		</script>
+		<h2>Thanks for using the Test Scores Application !!</h2>
+	</body>
+</html>
