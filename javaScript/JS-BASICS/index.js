@@ -2,9 +2,7 @@ function greeting(name) {
   console.log("Hello " + name);
 }
 
-let greet = (name) => {
-  console.log("Hello " + name);
-};
+let greet = (name) => console.log("Hello " + name);
 
 function squares(number) {
   return number * number;
